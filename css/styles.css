@@ -145,7 +145,7 @@ p { margin: 0 0 1em; }
 .hero { overflow: hidden; }
 .hero::before { z-index: 1; }
 .hero .container { position: relative; z-index: 3; padding: 5rem 0; }
-.hero h1 { max-width: 15ch; }
+.hero h1 { max-width: 20ch; }
 .hero h1 em { font-style: normal; color: var(--sky); }
 .hero p { font-size: 1.2rem; max-width: 36rem; color: rgba(255,255,255,.85); margin-bottom: 2rem; }
 
