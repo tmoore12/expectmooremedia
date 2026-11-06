@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | ExpectMoore Media</title>
+  <meta name="description" content="Request a quote for photography, video, drone, web, audio, or podcast production.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@300;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="container nav" aria-label="Main">
+    <a class="logo" href="index.html" aria-label="ExpectMoore Media home">
+      <span class="logo-mark" aria-hidden="true">EM</span>
+      <span>Expect<strong>Moore</strong><small>Media</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="btn btn--primary" href="contact.html" aria-current="page">Get a Quote</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Contact</span>
+      <h1>Let's talk about your project</h1>
+      <p>Fill out the form and we'll follow up with ideas, availability, and a quote.</p>
+    </div>
+  </section>
+
+  <section class="section section--paper">
+    <div class="container contact-grid">
+      <div>
+        <h2>Request a quote</h2>
+        <p class="lead">The more you share, the faster we can put together the right plan. Not sure what you need? Just describe your goal.</p>
+        <ul class="info-list">
+          <li><strong>Service area</strong>West Michigan, with travel available</li>
+          <li><strong>Real estate shoots</strong>Include the property address, approximate square footage, and your target listing date.</li>
+          <li><strong>Websites &amp; podcasts</strong>Share links to sites or shows you like and your ideal launch date.</li>
+        </ul>
+      </div>
+
+      <form class="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="thank-you.html">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hidden-field"><label>Don't fill this out: <input name="bot-field"></label></p>
+        <div class="form-row">
+          <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+          <div class="field"><label for="company">Company or brokerage</label><input id="company" name="company" type="text" autocomplete="organization"></div>
+        </div>
+        <fieldset class="field">
+          <legend>What can we help with?</legend>
+          <div class="checks">
+            <label><input type="checkbox" name="services" value="real-estate"> Real estate photo &amp; video</label>
+            <label><input type="checkbox" name="services" value="drone"> Drone photo &amp; video</label>
+            <label><input type="checkbox" name="services" value="website"> Website development</label>
+            <label><input type="checkbox" name="services" value="audio"> Audio production</label>
+            <label><input type="checkbox" name="services" value="podcast"> Podcast production</label>
+            <label><input type="checkbox" name="services" value="content"> Content creation</label>
+          </div>
+        </fieldset>
+        <div class="field">
+          <label for="timeline">Timeline</label>
+          <select id="timeline" name="timeline">
+            <option value="">Select one</option>
+            <option>As soon as possible</option>
+            <option>Within 2 weeks</option>
+            <option>Within a month</option>
+            <option>Just exploring</option>
+          </select>
+        </div>
+        <div class="field"><label for="message">Tell us about your project</label><textarea id="message" name="message" required></textarea></div>
+        <button class="btn btn--primary" type="submit">Send Request</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="index.html" aria-label="ExpectMoore Media home">
+          <span class="logo-mark" aria-hidden="true">EM</span>
+          <span>Expect<strong>Moore</strong><small>Media</small></span>
+        </a>
+        <p>Photography, video, drone, web, and audio production for real estate professionals, businesses, and creators across West Michigan.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#real-estate">Real Estate Photo &amp; Video</a></li>
+          <li><a href="services.html#drone">Drone Photo &amp; Video</a></li>
+          <li><a href="services.html#websites">Website Development</a></li>
+          <li><a href="services.html#audio">Audio Production</a></li>
+          <li><a href="services.html#podcasts">Podcast Production</a></li>
+          <li><a href="services.html#content">Content Creation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year">2026</span> ExpectMoore Media. All rights reserved.</span>
+      <span>Proudly based in West Michigan</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
