@@ -186,6 +186,7 @@ p { margin: 0 0 1em; }
 /* Split feature */
 .split { display: grid; gap: clamp(2rem, 5vw, 4.5rem); grid-template-columns: 1fr 1fr; align-items: center; }
 .split img { border-radius: var(--radius); width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+.split img.wide-photo { aspect-ratio: auto; height: auto; }
 .split.reverse > :first-child { order: 2; }
 @media (max-width: 860px) {
   .split { grid-template-columns: 1fr; }
