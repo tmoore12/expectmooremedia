@@ -136,7 +136,7 @@ p { margin: 0 0 1em; }
   position: relative; color: var(--white);
   min-height: min(88vh, 820px);
   display: flex; align-items: center;
-  background: var(--ink) url("../images/hero-aerial.jpg") center/cover no-repeat;
+  background: var(--ink) url("../images/hero-home.jpg") 15% center/cover no-repeat;
 }
 .hero::before {
   content: ""; position: absolute; inset: 0;
