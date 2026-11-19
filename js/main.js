@@ -46,6 +46,21 @@
     });
   });
 
+  // YouTube embeds: swap the thumbnail for the player when clicked
+  document.querySelectorAll(".video-embed[data-youtube]").forEach(function (box) {
+    var btn = box.querySelector(".video-play");
+    if (!btn) return;
+    btn.addEventListener("click", function () {
+      var iframe = document.createElement("iframe");
+      iframe.src = "https://www.youtube-nocookie.com/embed/" + box.getAttribute("data-youtube") + "?autoplay=1&rel=0";
+      iframe.title = box.getAttribute("data-title") || "YouTube video";
+      iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+      iframe.referrerPolicy = "strict-origin-when-cross-origin";
+      iframe.allowFullscreen = true;
+      box.replaceChild(iframe, btn);
+    });
+  });
+
   // Pre-select a service on the contact form from ?service=
   var params = new URLSearchParams(window.location.search);
   var svc = params.get("service");
